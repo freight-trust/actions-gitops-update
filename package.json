@@ -1,0 +1,54 @@
+{
+  "name": "@freight-trust/gitops-update",
+  "description": "gitops workflow for updating k8s",
+  "version": "1.0.5",
+  "author": "sam@freighttrust.com @freight-trust",
+  "bin": {
+    "gitops-update": "./bin/run"
+  },
+  "bugs": "https://github.com/https://github.com/freight-trust/actions-gitops-update/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "conventional-changelog-writer": "^4.0.16",
+    "git-semver-tags": "^4.0.0",
+    "oclif": "^1.16.1",
+    "prettier": "^2.0.5",
+    "standard-version": "^8.0.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "mocha": "^5",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/https://github.com/freight-trust/actions-gitops-update",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "Apache 2.0",
+  "main": "index.js",
+  "oclif": {
+    "bin": "gitops-update"
+  },
+  "private": false,
+  "repository": "https://github.com/freight-trust/actions-gitops-update",
+  "scripts": {
+    "gz go": "./bin/run",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
