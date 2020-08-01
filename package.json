@@ -1,8 +1,9 @@
 {
   "name": "@freight-trust/gitops-update",
   "description": "gitops workflow for updating k8s",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "author": "sam@freighttrust.com @freight-trust",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bin": {
     "gitops-update": "./bin/run"
   },
@@ -15,7 +16,7 @@
     "git-semver-tags": "^4.0.0",
     "oclif": "^1.16.1",
     "prettier": "^2.0.5",
-    "standard-version": "^8.0.1"
+    "standard-version": "^8.0.2"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
